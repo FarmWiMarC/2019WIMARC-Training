@@ -1,0 +1,1230 @@
+@charset "utf-8";
+/* CSS Document */
+
+#dateshow {
+  
+  
+  position: absolute;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  left: -25px;
+  top: 350px;
+  height: 35px;
+  width: 170px;
+  color: #FFF;
+  text-align: left;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  
+
+}
+#timeshow {
+ 
+  
+  position: absolute;
+  color: black;
+  font-size: 54px;
+  font-weight: bold;
+  left: -25px;
+  top: 277px;
+  height: 35px;
+  width: 150px;
+  color: #FFF;
+  text-align: left;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  
+
+}
+#groupa{
+  
+  background-image: url('netpie.png');
+  position: absolute;
+  color: black;
+  font-size: 44px;
+  font-weight: bold;
+  left: 580px;
+  top: 110px;
+  height: 103px;
+  width: 110px;
+  color: #000;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+
+}
+
+#groupb {
+  
+  background-image: url('netpie75.png');
+  position: absolute;
+  font-size: 44px;
+  font-weight: bold;
+  left: 920px;
+  top: 150px;
+  height: 75px;
+  width: 33px;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+
+}
+#groupc {
+  
+  background-image: url('netpie75.png');
+  position: absolute;
+  color: black;
+  font-size: 44px;
+  font-weight: bold;
+  left: 920px;
+  top: 420px;
+  height: 75px;
+  width: 33px;
+  color: #FFF;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+
+}
+
+#groupd {
+  
+  background-image: url('netpie75.png');
+  position: absolute;
+  color: black;
+  font-size: 44px;
+  font-weight: bold;
+  left: 782px;
+  top: 13px;
+  height: 75px;
+  width: 33px;
+  color: #FFF;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+
+}
+
+
+
+#namea1 {
+  
+  
+  position: absolute;
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  left: 415px;
+  top: 290px;
+  height: 35px;
+  width: 150px;
+  color: #000;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+
+}
+#namea2 {
+ 
+  
+  position: absolute;
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  left: 415px;
+  top: 350px;
+  height: 35px;
+  width: 150px;
+  color: #000;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+
+}
+#namea3 {
+  
+  
+  position: absolute;
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  left: 705px;
+  top: 300px;
+  height: 35px;
+  width: 150px;
+  color: #FFF;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+
+}
+#namea4 {
+
+  
+  position: absolute;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  left: 295px;
+  top: 140px;
+  height: 35px;
+  width: 158px;
+  color: #FFF;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+
+}
+#namea5 {
+ 
+  
+  position: absolute;
+  color: black;
+  font-size: 44px;
+  font-weight: bold;
+  left: 500px;
+  top: 440px;
+  height: 35px;
+  width: 158px;
+  color: #FFF;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+
+}
+#namea6 {
+    
+  
+  position: absolute;
+  color: black;
+  font-size: 44px;
+  font-weight: bold;
+   left: -30px;
+  top: 630px;
+  
+  height: 50px;
+  width: 158px;
+
+ 
+  
+  color: #FFF;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+}
+
+#namea7 {
+    
+  
+  position: absolute;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+   left: 230px;
+  top: 285px;
+  height: 50px;
+  width: 158px;
+
+ 
+  
+  color: #FFF;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+}
+#namea8 {
+   
+  
+  position: absolute;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+   left: 345px;
+  top: 285px;
+  height: 50px;
+  width: 158px;
+ 
+  
+  color: #FFF;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+}
+
+#namea9 {
+    
+ 
+
+     
+  
+  position: absolute;
+  color: black;
+  font-size: 44px;
+  font-weight: bold;
+  left: 390px;
+ top: 25px;
+  height: 50px;
+  width: 30px;
+
+ 
+  
+ 
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+}
+
+#namea10 {
+  
+  background-image: url('humid-blue.png'); 
+  position: absolute;
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  left: 491px;
+ top: 39px;
+  height: 70px;
+  width: 40px;
+
+ 
+  
+  color: #3F51B5;
+ 
+  padding: 0 60px;
+  margin: 20px;
+  display: flex;
+ align-items: center;
+ 
+
+  }
+
+#nameb1 {
+  
+  
+  position: absolute;
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  left: 415px;
+  top: 560px;
+  height: 35px;
+  width: 150px;
+  color: #000;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+
+}
+#nameb2 {
+ 
+  
+  position: absolute;
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  left: 415px;
+  top: 630px;
+  height: 35px;
+  width: 150px;
+  color: #000;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+
+}
+#nameb3 {
+  
+  
+  position: absolute;
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  left: 705px;
+  top: 575px;
+  height: 35px;
+  width: 150px;
+  color: #FFF;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+
+}
+#nameb4 {
+
+  
+  position: absolute;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  left: 290px;
+  top: 445px;
+  height: 35px;
+  width: 158px;
+  color: #FFF;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+
+}
+#nameb5 {
+ 
+  
+  position: absolute;
+  color: black;
+  font-size: 44px;
+  font-weight: bold;
+  left: 870px;
+  top: 440px;
+  height: 35px;
+  width: 158px;
+  color: #FFF;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+
+}
+#nameb6 {
+    
+  
+  position: absolute;
+  color: black;
+  font-size: 44px;
+  font-weight: bold;
+   left: 455px;
+  top: 228px;
+  
+  height: 50px;
+  width: 158px;
+
+ 
+  
+  color: #FFF;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+}
+
+#nameb7 {
+    
+  
+  position: absolute;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+   left: 180px;
+  top: 485px;
+  height: 50px;
+  width: 158px;
+
+ 
+  
+  color: #FFF;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+}
+#nameb8 {
+   
+  
+  position: absolute;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+   left: 470px;
+  top: 485px;
+  height: 50px;
+  width: 158px;
+ 
+  
+  color: #FFF;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+}
+
+#nameb9 {
+    
+ 
+
+     
+  
+  position: absolute;
+  color: black;
+  font-size: 44px;
+  font-weight: bold;
+  left: 390px;
+ top: 25px;
+  height: 50px;
+  width: 30px;
+
+ 
+  
+ 
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+}
+
+#nameb10 {
+  
+  background-image: url('humid-blue.png'); 
+  position: absolute;
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  left: 491px;
+   top: 39px;
+  height: 70px;
+  width: 40px;
+
+ 
+  
+  color: #3F51B5;
+ 
+  padding: 0 60px;
+  margin: 20px;
+  display: flex;
+ align-items: center;
+ 
+
+  }
+
+
+#namec1 {
+  
+  
+  position: absolute;
+  color: black;
+  font-size: 44px;
+  font-weight: bold;
+  left: 300px;
+  top: 65px;
+  height: 35px;
+  width: 150px;
+  color: #FFF;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+
+}
+#namec2 {
+ 
+  
+  position: absolute;
+  color: black;
+  font-size: 44px;
+  font-weight: bold;
+  left: 120px;
+  top: 65px;
+  height: 35px;
+  width: 150px;
+  color: #FFF;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+
+}
+#namec3 {
+  
+  
+  position: absolute;
+  color: black;
+  font-size: 44px;
+  font-weight: bold;
+  left: 550px;
+  top: 65px;
+  height: 35px;
+  width: 150px;
+  color: #FFF;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+
+}
+#namec4 {
+
+  
+  position: absolute;
+  color: black;
+  font-size: 44px;
+  font-weight: bold;
+  left: 800px;
+  top: 65px;
+  height: 35px;
+  width: 158px;
+  color: #FFF;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+
+}
+#namec5 {
+ 
+  
+  position: absolute;
+  color: black;
+  font-size: 44px;
+  font-weight: bold;
+  left: 510px;
+  top: 440px;
+  height: 35px;
+  width: 158px;
+  color: #FFF;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+
+}
+#namec6 {
+    
+  
+  position: absolute;
+  color: black;
+  font-size: 44px;
+  font-weight: bold;
+   left: 455px;
+  top: 228px;
+  
+  height: 50px;
+  width: 158px;
+
+ 
+  
+  color: #FFF;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+}
+
+#namec7 {
+    
+  
+  position: absolute;
+  color: black;
+  font-size: 44px;
+  font-weight: bold;
+   left: -18px;
+  top: 545px;
+  height: 50px;
+  width: 158px;
+
+ 
+  
+  color: #FFF;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+}
+#namec8 {
+   
+  
+  position: absolute;
+  color: black;
+  font-size: 35px;
+  font-weight: bold;
+   left: 9px;
+  top: 386px;
+  height: 50px;
+  width: 158px;
+ 
+  
+  color: #d80b0b;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+}
+
+#namec9 {
+    
+ 
+
+     
+  
+  position: absolute;
+  color: black;
+  font-size: 44px;
+  font-weight: bold;
+  left: 390px;
+ top: 25px;
+  height: 50px;
+  width: 30px;
+
+ 
+  
+ 
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+}
+
+#namec10 {
+  
+  background-image: url('humid-blue.png'); 
+  position: absolute;
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  left: 491px;
+ top: 39px;
+  height: 70px;
+  width: 40px;
+ 
+  
+  color: #3F51B5;
+ 
+  padding: 0 60px;
+  margin: 20px;
+  display: flex;
+ align-items: center;
+ 
+
+  }
+
+#named1 {
+  
+  
+  position: absolute;
+  color: black;
+  font-size: 44px;
+  font-weight: bold;
+  left: 640px;
+  top: 160px;
+  height: 35px;
+  width: 150px;
+  color: #FFF;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+
+}
+#named2 {
+ 
+  
+  position: absolute;
+  color: black;
+  font-size: 44px;
+  font-weight: bold;
+  left: 790px;
+  top: 140px;
+  height: 35px;
+  width: 150px;
+  color: #FFF;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+
+}
+#named3 {
+  
+  
+  position: absolute;
+  color: black;
+  font-size: 44px;
+  font-weight: bold;
+  left: 790px;
+  top: 280px;
+  height: 35px;
+  width: 150px;
+  color: #FFF;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+
+}
+#named4 {
+
+  
+  position: absolute;
+  color: black;
+  font-size: 44px;
+  font-weight: bold;
+  left: 640px;
+  top: 380px;
+  height: 35px;
+  width: 158px;
+  color: #FFF;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+
+}
+#named5 {
+ 
+  
+  position: absolute;
+  color: black;
+  font-size: 44px;
+  font-weight: bold;
+  left: 790px;
+  top: 440px;
+  height: 35px;
+  width: 158px;
+  color: #FFF;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+
+}
+#named6 {
+    
+  
+  position: absolute;
+  color: black;
+  font-size: 44px;
+  font-weight: bold;
+   left: 455px;
+  top: 228px;
+  
+  height: 50px;
+  width: 158px;
+
+ 
+  
+  color: #FFF;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+}
+
+#named7 {
+    
+  
+  position: absolute;
+  color: black;
+  font-size: 44px;
+  font-weight: bold;
+   left: 640px;
+  top: 635px;
+  height: 50px;
+  width: 158px;
+
+ 
+  
+  color: #FFF;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+}
+#named8 {
+   
+  
+  position: absolute;
+  color: black;
+  font-size: 44px;
+  font-weight: bold;
+   left: 790px;
+  top: 635px;
+  height: 50px;
+  width: 158px;
+ 
+  
+  color: #FFF;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+}
+
+#named9 {
+    
+ 
+
+     
+  
+  position: absolute;
+  color: black;
+  font-size: 44px;
+  font-weight: bold;
+  left: 390px;
+ top: 25px;
+  height: 50px;
+  width: 30px;
+
+ 
+  
+ 
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+}
+
+#named10 {
+  
+  background-image: url('humid-blue.png'); 
+  position: absolute;
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  left: 491px;
+ top: 39px;
+ height: 70px;
+  width: 40px;
+
+ 
+  
+  color: #3F51B5;
+ 
+  padding: 0 60px;
+  margin: 20px;
+  display: flex;
+ align-items: center;
+ 
+
+  }
+#compass {
+	width: 60px; height: 60px;
+	border-radius: 50%;
+	margin: 0 auto;
+	position: relative;
+	left : -395px;
+	top: 463px;
+	border: 10px solid #777;
+	
+	background: radial-gradient(
+		ellipse cover,
+		white,
+		#A3E2FC
+	);
+	
+	box-shadow:
+		0 0 4px #000,
+		0 0 1px 8px #ccc,
+		5px 10px 15px #48436f;
+	
+	transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* A bit of animation on hover would be nice too! */
+#compass:hover {
+	transform: skewX(-5deg) skewY(-2deg);
+	
+	box-shadow:
+		0 0 4px #000,
+		0 0 1px 8px #ccc,
+		8px 12px 3px 5px #666,
+		20px 28px 20px #afa9d7;
+}
+
+#compass:before {
+	content: '';
+	
+	border: 2px dashed #444;
+	position: absolute;
+	left: 10px; right: 10px;
+	bottom: 10px; top: 10px;
+	
+	border-radius: 50%;
+}
+
+#compass:after {
+	content: '';
+	
+	position: absolute;
+	left: -10px; right: -10px;
+	bottom: -10px; top: -10px;
+	
+	border-radius: 50%;
+	
+	background: linear-gradient(
+		-45deg,
+		rgba(255,255,255,0.9) 0%,
+		rgba(255,255,255,0.3) 47%,
+		rgba(255,255,255,0) 48%,
+		rgba(255,255,255,0) 100%
+	);
+}
+
+
+/* neat! lets position the directions now - N E S W */
+
+#compass span {
+	position: absolute;
+	font-weight: bold;
+}
+
+/* North */
+#compass span:nth-child(1) {
+	left: 95px; top: 20px;
+}
+/* South */
+#compass span:nth-child(3) {
+	left: 95px; bottom: 20px;
+}
+
+/* East */
+#compass span:nth-child(2) {
+	right: 25px; top: 90px;
+}
+/* West */
+#compass span:nth-child(4) {
+	left: 25px; top: 90px;
+}
+
+
+/* Next up, is the pointer */
+
+/* A bit of CSS3 animations on the pointer would be nice */
+@keyframes rotate {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+
+#pointer {
+	width: 60px; height: 30px;
+	
+	/* Centering it */
+	position: relative;
+	left: 50%; top: 50%;
+	margin-left: -30px; margin-top: -15px;
+	transform: rotate(0deg);
+	/*background: black;
+	animation: rotate 5s cubic-bezier(1,.2,.5,1) infinite alternate;*/
+}
+
+/* Now the trick i wanna use to create a diamond
+shaped pointer is to skew the #pointer
+
+But for some reason that did'nt work hence I did it
+on #pointer:before */
+
+#pointer:before {
+	content: '';
+	
+	position: absolute;
+	left: 0; right: 0;
+	top: 0; bottom: 0;
+	
+	background: linear-gradient(
+		-63deg,
+		rgba(79,188,242,1) 1%,
+		rgba(26,110,206,1) 50%,
+		rgba(216,216,216,1) 51%,
+		rgba(244,94,80,1) 53%,
+		rgba(255,45,45,1) 100%
+	);
+	
+	transform: skewX(60deg);
+}
+
+/* Looks good, lets make the pointer's joint now */
+
+#pointer:after {
+	content: '';
+	
+	width: 10px; height: 10px;
+	background: #4781c0;
+	border-radius: 50%;
+	box-shadow:
+		inset 0 0 4px 2px #4d4d4d,
+		0 0 5px 1px white;
+	
+	/* centering it */
+	position: absolute;
+	left: 50%; top: 50%;
+	margin-left: -5px; margin-top: -5px;
+}
+
+

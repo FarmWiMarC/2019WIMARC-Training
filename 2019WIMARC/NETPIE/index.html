@@ -1,0 +1,619 @@
+<script src="https://netpie.io/microgear.js"></script>
+
+<link rel="stylesheet" href="GHelement.css" type="text/css" charset="utf-8"/>
+
+<script src="jquery.min.js"></script>
+<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="http://static.pureexample.com/js/flot/excanvas.min.js"></script><![endif]-->
+
+     <script type="text/javascript" src="jquery.js"></script>
+
+
+<script>
+
+//Deployment Secret : tM7WkTS8uImTDdQy26oYjFjGy
+var nitrate;
+var netpiepic =0;
+var tempIoT1,tempIoT2,tempIoT3,tempIoT4,tempIoT5,tempIoT6,tempIoT7,tempIoT8,tempIoT9,tempIoT10,tempIoT11;
+
+var tempIoT1a,tempIoT2a,tempIoT3a,tempIoT4a,tempIoT5a,tempIoT6a,tempIoT7a,tempIoT8a,tempIoT9a,tempIoT10a,tempIoT11a;
+var tempIoT1b,tempIoT2b,tempIoT3b,tempIoT4b,tempIoT5b,tempIoT6b,tempIoT7b,tempIoT8b,tempIoT9b,tempIoT10b,tempIoT11b;
+var tempIoT1c,tempIoT2c,tempIoT3c,tempIoT4c,tempIoT5c,tempIoT6c,tempIoT7c,tempIoT8c,tempIoT9c,tempIoT10c,tempIoT11c;
+var tempIoT1d,tempIoT2d,tempIoT3d,tempIoT4d,tempIoT5d,tempIoT6d,tempIoT7d,tempIoT8d,tempIoT9d,tempIoT10d,tempIoT11d;
+
+
+  const APPKEY = 'x0nQyGKHUnhH0GW';
+	const APPSECRET ='ACBAYWgLHDjBC36hFdtEkparQ';
+	const APPID = '2019wimarc';
+var refmoisture=0;
+var sensitivity= -1;
+
+var temp2;
+
+var moistureoffset =68.67217;
+var moisturesense=0.025; 
+
+
+    var microgear = Microgear.create({
+        gearkey: APPKEY,
+        gearsecret: APPSECRET,
+		alias:"maejoHTML"
+    });
+
+    microgear.on('message',function(topic,msg) {
+	console.log(topic+'   '+msg);
+ //	document.getElementById("fan").style.display = "block";
+	var d = new Date().toISOString().slice(0,10);
+	document.getElementById("dateshow").innerHTML= d; 
+	if (topic == '/2019wimarc/Chan01Control'){
+	 document.getElementById("fan").style.display = "block";
+	
+	
+	
+	
+	
+	}
+	if (topic == '/2019wimarc/wimarc/AB'){
+	
+	// document.getElementById("fan").style.display = "block";
+	
+	
+	//document.getElementById("name1").style.fontFamily = "Arial Black";
+	 var res = msg.split(",");
+	document.getElementById("timeshow").innerHTML= res[0]; 
+	//document.getElementById("name9").innerHTML= msg;
+	
+	temp=moistureoffset-((res[1]*moisturesense));
+	temp2=(res[2]-500)/10;
+	document.getElementById("namea1").innerHTML= temp.toFixed(2)+"/"+temp2.toFixed(2);   
+	temp=moistureoffset-((res[3]*moisturesense));
+	temp2=(res[4]-500)/10;
+	document.getElementById("namea2").innerHTML= temp.toFixed(2)+"/"+temp2.toFixed(2);   
+//	temp=(res[5]-490)/1000;
+//	document.getElementById("namea3").innerHTML= temp.toFixed(2);
+	temp=moistureoffset-((res[9]*moisturesense));
+	temp2=(res[10]-500)/10;
+	document.getElementById("nameb1").innerHTML= temp.toFixed(2)+"/"+temp2.toFixed(2);  
+    document.getElementById("nameb1").innerHTML= ""; 	
+	temp=moistureoffset-((res[11]*moisturesense));
+	temp2=(res[12]-500)/10;
+	document.getElementById("nameb2").innerHTML= temp.toFixed(2)+"/"+temp2.toFixed(2);   
+	document.getElementById("nameb2").innerHTML= ""; 
+	}
+	if (topic == '/2019wimarc/mpibmbk1/B'){
+	
+	if (netpiepic ==1)
+	{
+	document.getElementById("groupb").style.backgroundImage="url(netpie50.png)";
+	netpiepic=0;
+	
+	
+	}
+	else
+	{
+	netpiepic=1;
+	document.getElementById("groupb").style.backgroundImage="url(netpie75.png)";
+	}
+	
+	
+	//document.getElementById("name1").style.fontFamily = "Arial Black";
+	 var res = msg.split(",");
+	document.getElementById("timeshow").innerHTML= res[0]; 
+	//document.getElementById("name9").innerHTML= msg;
+	
+	temp=moistureoffset-((res[1]*moisturesense));
+	temp2=(res[2]-500)/10;
+	document.getElementById("nameb1").innerHTML= temp.toFixed(2)+"/"+temp2.toFixed(2);   
+	temp=moistureoffset-((res[3]*moisturesense));
+	temp2=(res[4]-500)/10;
+	document.getElementById("nameb2").innerHTML= temp.toFixed(2)+"/"+temp2.toFixed(2);   
+//	temp=(res[5]-490)/1000;
+///	document.getElementById("nameb3").innerHTML= temp.toFixed(2);
+	
+	}
+	if (topic == '/2019wimarc/wimarc/station'){
+	
+	
+	if (netpiepic ==1)
+	{
+	document.getElementById("groupc").style.backgroundImage="url(netpie50.png)";
+	netpiepic=0;
+	
+	
+	}
+	else
+	{
+	netpiepic=1;
+	document.getElementById("groupc").style.backgroundImage="url(netpie75.png)";
+	}
+	//document.getElementById("name1").style.fontFamily = "Arial Black";
+	
+	 var res = msg.split(",");
+	document.getElementById("timeshow").innerHTML= res[0]; 
+	//document.getElementById("name9").innerHTML= msg;
+	
+	temp=(res[1])/1;
+	
+	document.getElementById("namec2").innerHTML= temp.toFixed(2);   
+	temp=(res[2])/1;
+	document.getElementById("namec1").innerHTML= temp.toFixed(2);       
+	
+	temp=(res[3]/1); //RH= (1250*RHvoltage)/voltref-1250;
+	document.getElementById("namec3").innerHTML= temp.toFixed(2);   
+	
+	temp =res[8]/1;
+	document.getElementById("namec4").innerHTML= temp.toFixed(2);   
+	
+	temp =res[5]/1;
+	document.getElementById("namec7").innerHTML= temp.toFixed(2);  	
+	 
+	
+	temp =res[4]+74;
+    	
+	document.getElementById("pointer").style.transform = "rotate("+temp+"deg)";		
+	 
+	
+	
+	
+	}
+	
+	if (topic == '/2019wimarc/mtec01/D'){
+
+	var res = msg.split(",");
+	
+	
+	if (res[1] != 0 ){
+	temp=(res[1]/4400)*100;
+	
+	document.getElementById("named1").innerHTML= temp.toFixed(2);       
+	tempIoT1b=res[1];
+	temp=(res[2]-400)/19.5;
+	
+	document.getElementById("named2").innerHTML= temp.toFixed(2);       
+	tempIoT2b=res[2];
+	}
+	if (res[3] != 0 ){
+	temp=(res[3]-800)/31;
+	document.getElementById("named3").innerHTML= temp.toFixed(2);       
+	tempIoT3b=res[3];
+	temp=(res[4]-400)/19.5;
+	document.getElementById("named4").innerHTML= temp.toFixed(2);       
+	tempIoT4b=res[4];
+	}
+	if (res[5] != 0 ){
+	temp=(res[5]/4400)*100;	
+	document.getElementById("named5").innerHTML= temp.toFixed(2);       
+	tempIoT5b=res[5];
+	}
+	if (res[8] != 0 ){
+	
+	temp=(res[8]-500)/10;
+	//temp=36-(res[7]*0.0015);
+	document.getElementById("named7").innerHTML= temp.toFixed(2);       
+	tempIoT7b=res[7];
+	temp=36-(res[7]*0.015);
+	document.getElementById("named8").innerHTML= temp.toFixed(2);       
+	tempIoT8b=res[8];
+	}
+	
+	
+	
+	
+	}
+	
+	
+	  
+
+	
+    });
+
+    microgear.on('connected', function() {
+     
+	 microgear.subscribe("/wimarc/AB");
+	    microgear.subscribe("/wimarc/B");
+		 microgear.subscribe("/wimarc/station");
+		 microgear.subscribe("/wimarc/volt");
+		 
+		var d = new Date();
+        var n = d.getHours();
+		if (n < 5) n=6;
+        if (n > 18) n=17;
+        if (n>9) 		
+	    document.getElementById("data").style.backgroundImage="url(/wimarc/image/H"+n+".jpg)";
+		else
+		document.getElementById("data").style.backgroundImage="url(/wimarc/image/H0"+n+".jpg)";
+		
+		
+		
+    });
+
+    microgear.on('present', function(event) {
+        //console.log(event);
+    });
+
+   
+
+    microgear.resettoken(function(err) {
+        microgear.connect(APPID);
+    });
+
+	
+   
+	
+	</script>
+
+
+
+
+
+   
+
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>สวนมังคุด </title>
+    </head>
+    <body>
+	
+	<style type="text/css">
+#data {
+  
+   
+  height: 720px;
+  width: 1280px;
+  text-align :center;
+
+ }
+#imagedata {
+ 
+    margin: auto;
+   vertical-align:middle
+}
+	
+
+	
+	
+#container {
+  height: 750px;
+  width: 1040px;
+  text-align :center;
+  margin: auto;
+  position: relative;
+  background-image: url('/pic/Chan063.png');
+ }
+}
+#image {
+  position: relative;
+  
+    top: 0; bottom:0; left: 0; right:0;
+  
+}
+
+
+#netpie {
+  background-image: url('netpie75.png');
+  
+  position: absolute;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+ left: 0px;
+  top: 12px;
+  height: 74px;
+  width: 30px;
+
+  color: #FFF;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+}
+#netpielogo {
+  background-image: url('netpie75.png');
+  
+  position: absolute;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+ left: 390px;
+  top: 280px;
+  height: 74px;
+  width: 30px;
+
+  color: #FFF;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+}
+
+#fan{
+  display: none;
+  background-image: url('GHfan200invert.png');
+  position: absolute;
+  color: black;
+  font-size: 44px;
+  font-weight: bold;
+  left: 580px;
+  top: 110px;
+  height: 103px;
+  width: 110px;
+  color: #000;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+
+}
+
+
+#flotcontainer {
+
+ position: absolute;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  left: 650px;
+  top: 50px;
+  height: 500px;
+  width: 100%;
+
+ 
+  
+  color: #FFF;
+  text-align: center;
+  padding: 0 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  /* align horizontal */
+  align-items: center;
+  /* align vertical */
+  
+}
+#legendContainer {
+    left: 0px;
+    top: 650px;
+   position: absolute;
+   
+}
+ 
+</style>
+
+
+<style>
+#tabs {
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#tabs li {
+  float: left;
+  margin: 0 .5em 0 0;
+}
+
+#tabs a {
+  position: relative;
+  background: #ddd;
+  background-image: linear-gradient(to bottom, #fff, #ddd);  
+  padding: .7em 3.5em;
+  float: left;
+  text-decoration: none;
+  color: #444;
+  text-shadow: 0 1px 0 rgba(255,255,255,.8);
+  border-radius: 5px 0 0 0;
+  box-shadow: 0 2px 2px rgba(0,0,0,.4);
+}
+
+#tabs a:hover,
+#tabs a:hover::after,
+#tabs a:focus,
+#tabs a:focus::after {
+  background: #fff;
+}
+
+#tabs a:focus {
+  outline: 0;
+}
+
+#tabs a::after {
+  content:'';
+  position:absolute;
+  z-index: 1;
+  top: 0;
+  right: -.5em;  
+  bottom: 0;
+  width: 1em;
+  background: #ddd;
+  background-image: linear-gradient(to bottom, #fff, #ddd);  
+  box-shadow: 2px 2px 2px rgba(0,0,0,.4);
+  transform: skew(10deg);
+  border-radius: 0 5px 0 0;  
+}
+
+#tabs #current a,
+#tabs #current a::after {
+  background: #fff;
+  z-index: 3;
+}
+
+#content {
+  background: #fff;
+  padding: 2em;
+  height: 220px;
+  position: relative;
+  z-index: 2; 
+  border-radius: 0 5px 5px 5px;
+  box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, .5);
+}
+
+
+</style>
+
+<style>
+div.img2 {
+    
+    width: 180px;
+	position: absolute;
+	left : 500px;
+	top: 570px;
+
+div.img2:hover {
+    border: 1px solid #777;
+}
+
+div.img2 img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc2 {
+    padding: 15px;
+    text-align: center;
+	position: absolute;
+	left : 200px;
+	top: 155px;
+	 font-size: 30px;
+  font-weight: bold;
+	
+}
+
+
+
+</style>	
+
+
+
+<style>
+div.img3 {
+    
+    width: 180px;
+	position: absolute;
+	left : 20px;
+	top: 150px;
+
+div.img3:hover {
+    border: 1px solid #777;
+}
+
+div.img3 img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc3 {
+    padding: 15px;
+    text-align: center;
+	position: absolute;
+	left : 200px;
+	top: 155px;
+	 font-size: 30px;
+  font-weight: bold;
+	
+}
+
+
+
+
+
+
+
+</style>	
+
+
+
+<div id="data">
+
+ <img id="image" align="middle" src="wimarcfarmlogoT.png" />
+
+</div>
+
+ 
+
+
+<div  id="container">
+ 
+
+  <p id="groupb"> A</p> 
+   <p id="groupc">B   </p>
+   
+   <p id="dateshow">   </p>
+   <p id="timeshow">   </p>
+   <p id="namea1">   </p>
+   <p id="namea2">   </p>
+   <p id="namea3">   </p>
+    <p id="namea4">   </p>
+   <p id="namea5">   </p>
+  
+   <p id="namea7">   </p>
+   <p id="namea8">   </p>
+   
+   
+   <p id="nameb1">   </p>
+   <p id="nameb2">   </p>
+   <p id="nameb3">   </p>
+   <p id="nameb4">   </p>
+   <p id="nameb5">   </p>
+   
+   <p id="nameb7">   </p>
+   <p id="nameb8">   </p>
+
+   <p id="namec1">   </p>
+   <p id="namec2">   </p>
+   <p id="namec3">   </p>
+   <p id="namec4">   </p>
+   <p id="namec5">   </p>
+  
+   <p id="namec7">   </p>
+   <p id="namec8"> N  </p>
+   
+    <p id="named1">   </p>
+   <p id="named2">   </p>
+   <p id="named3">   </p>
+   <p id="named4">   </p>
+   <p id="named5">   </p>
+   <p id="named6">   </p>
+   <p id="named7">   </p>
+   <p id="named8">   </p>
+
+      <div id="compass">
+ 
+  <div id="pointer"></div>
+</div> 
+ 
+
+   
+<div class="img3" >
+  <a target="_blank" href="http://opasnectec.000webhostapp.com/2019WIMARC/Graph/">
+  <img src="/GH/recorddata.png" id="slide"   width="150px" height="150px">
+     </a>
+  
+</div>  
+
+
+</div>	
+
+ 
+	        
+      
+             
+      
+        
+       
+    </body>
+</html>
