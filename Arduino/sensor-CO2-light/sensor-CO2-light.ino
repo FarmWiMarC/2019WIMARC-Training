@@ -152,10 +152,10 @@ Luxvoltage = Luxvoltage/102.3-voltoffset;
  
     //Luxvoltage = (Luxvoltage+lastvalue)/2;
      Lux = (Luxvoltage*14) /50;
-  Serial.print("Lux  ="); 
+  Serial.print("Light  ="); 
  
  
- Serial.print(Luxvoltage);
+ Serial.print(Lux);
  Serial.println(" Lux");
 
  lastvalue=Supvoltage;
@@ -208,7 +208,7 @@ if (flagairsensor)
   nextion.write(0xff);
   nextion.write(0xff);
   Serial.print("txt END");
-
+  v4= intCO2;
    // We change the txt value of text box t0
   nextion.print("t3.txt=\"");
   nextion.print(String(v4));
@@ -228,7 +228,9 @@ else
 
 
   if (flaglight)
-  {// We change the txt value of text box t0
+  {
+   v3=Lux; 
+    // We change the txt value of text box t0
   nextion.print("t2.txt=\"");
   nextion.print(String(v3));
   nextion.print("\"");
