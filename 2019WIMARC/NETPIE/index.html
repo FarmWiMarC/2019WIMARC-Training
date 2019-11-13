@@ -236,10 +236,46 @@ var moisturesense=0.025;
         microgear.connect(APPID);
     });
 
+
+	function refresh(node)
+{
+   var times = 300; // gap in Milli Seconds;
+
+   (function startRefresh()
+   {
+      var address;
+      if(node.src.indexOf('?')>-1)
+       address = node.src.split('?')[0];
+      else 
+       address = node.src;
+      node.src = address+"?time="+new Date().getTime();
+
+      setTimeout(startRefresh,times);
+   })();
+
+}
+
+window.onload = function()
+{
+	
+  var node = document.getElementById('image');
+  refresh(node);
+  // you can refresh as many images you want just repeat above steps
+}
+  	
+
 	
    
 	
 	</script>
+
+<script>
+ $(document).ready(function() {
+ var url = “/wimarc.jpg?rnd=”+Math.random();
+  console.log('refresh');
+ $(‘#image’).attr(“src”,url);
+ });
+ </script>
 
 
 
@@ -539,8 +575,7 @@ div.desc3 {
 
 <div id="data">
 
- <img id="image" align="middle" src="wimarcfarmlogoT.png" />
-
+ <img id="image" align="middle" src="/wimarc.jpg" />
 </div>
 
  
