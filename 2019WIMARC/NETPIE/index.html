@@ -156,50 +156,6 @@ var moisturesense=0.025;
 	
 	}
 	
-	if (topic == '/2019wimarc/mtec01/D'){
-
-	var res = msg.split(",");
-	
-	
-	if (res[1] != 0 ){
-	temp=(res[1]/4400)*100;
-	
-	document.getElementById("named1").innerHTML= temp.toFixed(2);       
-	tempIoT1b=res[1];
-	temp=(res[2]-400)/19.5;
-	
-	document.getElementById("named2").innerHTML= temp.toFixed(2);       
-	tempIoT2b=res[2];
-	}
-	if (res[3] != 0 ){
-	temp=(res[3]-800)/31;
-	document.getElementById("named3").innerHTML= temp.toFixed(2);       
-	tempIoT3b=res[3];
-	temp=(res[4]-400)/19.5;
-	document.getElementById("named4").innerHTML= temp.toFixed(2);       
-	tempIoT4b=res[4];
-	}
-	if (res[5] != 0 ){
-	temp=(res[5]/4400)*100;	
-	document.getElementById("named5").innerHTML= temp.toFixed(2);       
-	tempIoT5b=res[5];
-	}
-	if (res[8] != 0 ){
-	
-	temp=(res[8]-500)/10;
-	//temp=36-(res[7]*0.0015);
-	document.getElementById("named7").innerHTML= temp.toFixed(2);       
-	tempIoT7b=res[7];
-	temp=36-(res[7]*0.015);
-	document.getElementById("named8").innerHTML= temp.toFixed(2);       
-	tempIoT8b=res[8];
-	}
-	
-	
-	
-	
-	}
-	
 	
 	  
 
@@ -279,7 +235,7 @@ window.onload = function()
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>สวนมังคุด </title>
+        <title>WIMARC</title>
     </head>
     <body>
 	
@@ -307,7 +263,7 @@ window.onload = function()
   text-align :center;
   margin: auto;
   position: relative;
-  background-image: url('/pic/Chan063.png');
+  background-image: url('/pic/wimarc01.png');
  }
 }
 #image {
