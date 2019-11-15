@@ -24,6 +24,51 @@ from itertools import count
 devicename = 'wimarc'
 URLlocation = 'https://opasnectec.000webhostapp.com/2019WIMARC/'#-----------Connect to wvdial------------------------
 
+
+#-------------NETPIE------------------
+import microgear.client as client
+
+gearkey = 'OeaapzYXiibyhBH'
+gearsecret =   'q1w9VTGF3Ik8ImlnCQMefcxp0'
+appid =  '2019wimarc' 
+global connect
+connect =0
+global netpiecount
+netpiecount=0
+checkmessage =''
+def connection():
+    print "Now I am connected with netpie"
+    
+def callback_present(gearkey) :
+    print gearkey+" become online."
+
+def callback_error(msg) :
+    print msg
+
+def subscription(topic,message):
+    global checkmessage
+    global netpiecount
+    #logging.debug(topic+" "+message)
+    print topic+" "+message
+    if topic == "/tmec/wimarc/station" :
+        checkmessage = message
+        print checkmessage
+        netpiecount = 0 
+    
+
+def disconnect():
+    global connect
+    connect=0
+    print "disconnect"
+    logging.debug("disconnected")
+
+timestamp = "0:0:0"
+
+connect =0
+#///////////////////////////////////////////////////
+
+
+
 from time import strftime
 rcvH=strftime("%Y-%m-%d ")
 rcvSR=strftime("%H:%M:%S ")
@@ -550,47 +595,7 @@ record =0
 recordtime=0
 #-----------Sent data to database-----------[ALL database]--------------
 
-#-------------NETPIE------------------
-import microgear.client as client
 
-gearkey = 'OeaapzYXiibyhBH'
-gearsecret =   'q1w9VTGF3Ik8ImlnCQMefcxp0'
-appid =  '2019wimarc' 
-global connect
-connect =0
-global netpiecount
-netpiecount=0
-checkmessage =''
-def connection():
-    print "Now I am connected with netpie"
-    
-def callback_present(gearkey) :
-    print gearkey+" become online."
-
-def callback_error(msg) :
-    print msg
-
-def subscription(topic,message):
-    global checkmessage
-    global netpiecount
-    #logging.debug(topic+" "+message)
-    print topic+" "+message
-    if topic == "/tmec/wimarc/station" :
-        checkmessage = message
-        print checkmessage
-        netpiecount = 0 
-    
-
-def disconnect():
-    global connect
-    connect=0
-    print "disconnect"
-    logging.debug("disconnected")
-
-timestamp = "0:0:0"
-
-connect =0
-#///////////////////////////////////////////////////
 
 #/////////read ser 
 def read_serial(ser):
