@@ -213,14 +213,6 @@ var moisturesense=0.025;
 		 microgear.subscribe("/wimarc/station");
 		 microgear.subscribe("/wimarc/volt");
 		 
-		var d = new Date();
-        var n = d.getHours();
-		if (n < 5) n=6;
-        if (n > 18) n=17;
-        if (n>9) 		
-	    document.getElementById("data").style.backgroundImage="url(/wimarc/image/H"+n+".jpg)";
-		else
-		document.getElementById("data").style.backgroundImage="url(/wimarc/image/H0"+n+".jpg)";
 		
 		
 		
@@ -239,7 +231,7 @@ var moisturesense=0.025;
 
 	function refresh(node)
 {
-   var times = 300; // gap in Milli Seconds;
+   var times = 3000; // gap in Milli Seconds;
 
    (function startRefresh()
    {
@@ -634,7 +626,7 @@ div.desc3 {
 
    
 <div class="img3" >
-  <a target="_blank" href="http://opasnectec.000webhostapp.com/2019WIMARC/Graph/">
+  <a target="_blank" href="/2019WIMARC/Graph/">
   <img src="/GH/recorddata.png" id="slide"   width="150px" height="150px">
      </a>
   
