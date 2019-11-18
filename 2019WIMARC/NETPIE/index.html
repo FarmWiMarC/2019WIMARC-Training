@@ -79,37 +79,6 @@ var moisturesense=0.025;
 	document.getElementById("nameb2").innerHTML= temp.toFixed(2)+"/"+temp2.toFixed(2);   
 	document.getElementById("nameb2").innerHTML= ""; 
 	}
-	if (topic == '/2019wimarc/mpibmbk1/B'){
-	
-	if (netpiepic ==1)
-	{
-	document.getElementById("groupb").style.backgroundImage="url(netpie50.png)";
-	netpiepic=0;
-	
-	
-	}
-	else
-	{
-	netpiepic=1;
-	document.getElementById("groupb").style.backgroundImage="url(netpie75.png)";
-	}
-	
-	
-	//document.getElementById("name1").style.fontFamily = "Arial Black";
-	 var res = msg.split(",");
-	document.getElementById("timeshow").innerHTML= res[0]; 
-	//document.getElementById("name9").innerHTML= msg;
-	
-	temp=moistureoffset-((res[1]*moisturesense));
-	temp2=(res[2]-500)/10;
-	document.getElementById("nameb1").innerHTML= temp.toFixed(2)+"/"+temp2.toFixed(2);   
-	temp=moistureoffset-((res[3]*moisturesense));
-	temp2=(res[4]-500)/10;
-	document.getElementById("nameb2").innerHTML= temp.toFixed(2)+"/"+temp2.toFixed(2);   
-//	temp=(res[5]-490)/1000;
-///	document.getElementById("nameb3").innerHTML= temp.toFixed(2);
-	
-	}
 	if (topic == '/2019wimarc/wimarc/station'){
 	
 	
@@ -137,7 +106,7 @@ var moisturesense=0.025;
 	temp=(res[2])/1;
 	document.getElementById("namec1").innerHTML= temp.toFixed(2);       
 	
-	temp=(res[3]/1); //RH= (1250*RHvoltage)/voltref-1250;
+	temp=(res[4]/1); //RH= (1250*RHvoltage)/voltref-1250;
 	document.getElementById("namec3").innerHTML= temp.toFixed(2);   
 	
 	temp =res[8]/1;
@@ -520,12 +489,13 @@ div.desc3 {
 </style>	
 
 
-
+<center>
 <div id="data">
 
  <img id="image" align="middle" src="/wimarc.jpg" />
-</div>
 
+ </div>
+</center>
  
 
 
